@@ -1,0 +1,41 @@
+{% extends "@bootstrap_barrio/layout/page.html.twig" %}
+{% block header %}
+  <nav{{navbar_attributes}}>
+    {% if container_navbar %}
+      <div class="container">
+      {% endif %}
+      {{ page.header }}
+      {% if page.primary_menu %}
+        <button aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#CollapsingNavbar" data-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="CollapsingNavbar">
+          {{ page.primary_menu }}
+        </div>
+      {% endif %}
+      {% if container_navbar %}
+      </div>
+    {% endif %}
+  </nav>
+{% endblock %}
+{% block content %}
+  <div id="main" class="{{ container }}">
+    <div class="row row-offcanvas row-offcanvas-left clearfix">
+      <main{{content_attributes}}>
+        <section class="section">
+          <a id="main-content" tabindex="-1"></a>
+          {{ page.content }}
+        </section>
+      </main>
+    </div>
+  </div>
+{% endblock %}
+{% block footer %}
+  <div class="{{ container }}">
+    {% if page.footer %}
+      <div class="site-footer__top clearfix">
+        {{ page.footer }}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

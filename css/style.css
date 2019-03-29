@@ -1,0 +1,941 @@
+:root {
+  --bg-color: 238, 243, 244;
+  --dark-green: 0, 96, 104;
+  --light-green: 97, 176, 188;
+  --grey-green: 111, 114, 113;
+  --dark-gray: 29, 37, 44;
+  --fire-orange: 231, 79, 61;
+  --dark-red: 231, 79, 61;
+}
+
+body {
+  font-family: "SourceSansPro-Regular", "Source Sans Pro" !important;
+  background: rgb(var(--bg-color));
+}
+
+p {
+  font-size: 20px;
+  color: rgb(var(--dark-gray));
+}
+
+p.large {
+  font-size: 24px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+h1.error-h1 {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+strong {
+  font-family: "SourceSansPro-Semibold", "Source Sans Pro Semibold",
+    "Source Sans Pro";
+}
+
+.btn-orange {
+  color: #fff;
+  background-color: rgb(var(--fire-orange));
+  border-color: rgb(var(--fire-orange));
+  font-size: 24px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: rgb(var(--dark-green));
+}
+
+.navbar-nav .dropdown-menu {
+  margin-left: -65px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link {
+  font-size: 1.2em;
+}
+header {
+  background: #fff;
+}
+.right-bottom-skewbar {
+  content: "";
+  width: 54em;
+  max-width: 60%;
+  height: 3em;
+  transform: skew(-57deg, 0);
+  background: rgb(var(--bg-color));
+  position: absolute;
+  bottom: -1px;
+  right: -2.9em;
+}
+
+.left-skewbar {
+  width: 54em;
+  max-width: 60%;
+  height: 3em;
+  transform: skew(-57deg, 0);
+  background: rgb(var(--bg-color));
+  position: relative;
+  top: 0;
+  left: -2.9em;
+}
+#accordion .card-header {
+  background-color: rgb(var(--dark-green));
+}
+.parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-layer2 {
+  background: url(../img/bg-layer2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+  /* IE6-9 */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#home .banner-layer2 {
+  background-position: -638px -654px;
+}
+
+#home .banner-layer3 {
+  background: url(../img/banner_home_girl.png) no-repeat;
+  background-position: 34% 50%;
+  position: absolute;
+  bottom: -70px;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.8);
+}
+
+#home .banner-main {
+  background-image: url(../img/banner_home_background.png);
+  background-repeat: no-repeat;
+  background-position: 30% 60%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+#about .banner-layer3 {
+  background: url(../img/Banner_AboutUs_people.png) no-repeat;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-position: 32% 14%;
+}
+
+#about .banner-main {
+  background-image: url(../img/Banner_AboutUs_background.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#products .banner-layer3 {
+  background: url(../img/Banner_Products_people.png) no-repeat;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 40% 0%;
+}
+
+#products .banner-main {
+  background-image: url(../img/Banner_Products_background.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#services .banner-layer3 {
+  background: url(../img/Banner_Services_girl.png) no-repeat;
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  background-position: 40% 14%;
+}
+
+#services .banner-main {
+  background-image: url(../img/Banner_Services_background.jpg);
+  background-repeat: no-repeat;
+  background-position: 32% 60%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#error .banner-layer3 {
+  background: url(../img/Banner_404_hand.png) no-repeat;
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  background-position: bottom;
+  background-size: contain;
+}
+
+#error .banner-main {
+  background-image: url(../img/Banner_404_background.jpg);
+  background-repeat: no-repeat;
+  background-position: 32% 60%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#about .banner {
+  min-height: 650px;
+  height: 100%;
+}
+
+.banner {
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  background: rgba(29, 37, 44, 0.2);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.banner > .row {
+  height: 50%;
+  color: #fff;
+}
+
+#banner-upper {
+  font-family: lemonde-courrier, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  padding-right: 1.5rem;
+}
+
+#banner-upper .main-heading {
+  font-size: 1.8rem;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#banner-upper .main-heading span {
+  font-size: 3rem;
+  line-height: 1em;
+  font-style: normal;
+  font-weight: 600;
+  display: block;
+}
+
+#banner-upper .sub-heading {
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#banner-lower {
+  background: rgba(29, 37, 44, 0.6);
+  font-family: "SourceSansPro-Regular", "Source Sans Pro";
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#banner-lower .main-heading {
+  padding-bottom: 1rem;
+}
+
+#banner-lower .sub-heading,
+#banner-lower .sub-heading p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.product-tab a {
+  background: rgb(var(--bg-color));
+  height: 60px;
+  text-align: center;
+  font-size: 2em;
+  line-height: 60px;
+  color: rgb(var(--dark-gray));
+  display: block;
+  border-radius: 0 10px 0 0;
+}
+
+#services .product-tab a {
+  border-radius: 10px;
+}
+
+#products .product-tab::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid rgb(var(--bg-color));
+  border-left: 100px solid transparent;
+  position: absolute;
+  left: -100px;
+}
+
+.service-tab a {
+  background: rgb(var(--light-green));
+  height: 60px;
+  text-align: center;
+  font-size: 2em;
+  line-height: 60px;
+  color: #fff;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+#services .service-tab a {
+  border-radius: 0 10px 0 0;
+}
+#services .service-tab::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid rgb(var(--light-green));
+  border-left: 100px solid transparent;
+  position: absolute;
+  left: -100px;
+}
+
+#sales {
+  z-index: 2;
+  background: rgb(var(--bg-color));
+  position: relative;
+}
+
+#sales .heading {
+  font-weight: normal;
+  font-size: 22px;
+  color: rgb(var(--dark-green));
+}
+
+.sale-list {
+  padding-left: 20px;
+}
+
+.sale-list li {
+  font-size: 18px;
+  padding-top: 0.8em;
+  list-style-type: none;
+  position: relative;
+}
+
+.sale-list li::before {
+  position: absolute;
+  content: "\f054";
+  font-size: 1em;
+  font-family: FontAwesome;
+  left: -20px;
+  color: rgb(var(--fire-orange));
+}
+
+#service-content {
+  background: rgb(var(--light-green));
+  color: #fff;
+}
+
+#service-content h3 {
+  font-size: 30px;
+  color: #fff;
+}
+
+#service-content h5 {
+  font-size: 22px;
+  padding: 0.5em 0;
+  color: #fff;
+}
+
+#service-content p {
+  color: #fff;
+  font-size: 24px;
+}
+
+#belief h3 {
+  font-size: 30px;
+  color: rgb(var(--dark-green));
+}
+
+#belief h5 {
+  font-size: 22px;
+  padding: 0.5em 0;
+  color: rgb(var(--dark-green));
+}
+
+#belief p {
+  font-size: 24px;
+}
+
+#aboutus {
+  position: relative;
+  overflow: hidden;
+  /* The image used */
+  background-image: url(../img/aboutus_home_teamPhoto.jpg);
+  /* Set a specific height */
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 0% 5%;
+}
+
+#aboutus::before {
+  content: "";
+  background: rgba(var(--light-green), 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#aboutus::after {
+  content: "";
+  width: 54em;
+  max-width: 60%;
+  height: 3em;
+  transform: skew(-57deg, 0);
+  background: rgb(var(--bg-color));
+  position: absolute;
+  top: 0;
+  left: -2.9em;
+}
+
+.aboutus-banner {
+  position: relative;
+}
+
+/* .aboutus-banner::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 30em solid rgba(4, 97, 105, 0.5);
+    border-right: 45em solid transparent;
+    position: absolute;
+    top: 3em;
+    left: -4em;
+} */
+
+.aboutus-btn {
+  font-size: 1.4em;
+}
+
+.aboutus-btn:hover {
+  background: rgba(var(--light-green));
+}
+
+#about-heading {
+  width: 350px;
+  margin-top: 40px;
+}
+
+#about-heading h4 {
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+#employment {
+  position: relative;
+  overflow: hidden;
+  /* The image used */
+  background-image: url(../img/Work_For_Us_Orlando.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 0% 5%;
+}
+
+#employment::before {
+  content: "";
+  background: rgba(var(--dark-red), 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#employment::after {
+  content: "";
+  width: 54em;
+  max-width: 60%;
+  height: 3em;
+  transform: skew(-57deg, 0);
+  background: rgb(var(--dark-gray));
+  position: absolute;
+  top: 0;
+  left: -2.9em;
+}
+
+.employment-legal-title,
+.employment-legal-title:hover {
+  color: white;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.employment-legal-content {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.work-banner {
+  position: relative;
+  text-align: right;
+}
+
+#work-heading h3 {
+  font-size: 32px;
+}
+
+#work-heading p {
+  font-size: 24px;
+  color: #fff;
+}
+
+.honeycomb-bg {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.honeycomb-bg p {
+  color: #fff;
+}
+
+.honeycomb-bg::before {
+  content: "";
+  background: rgb(var(--dark-gray));
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.honeycomb-bg::after {
+  content: "";
+  background-image: url(../img/honeycomb_pattern.svg);
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#leadership h3,
+#leadership h5,
+#leadership p,
+#leadership hr {
+  color: #fff !important;
+}
+
+#leadership hr {
+  border: 1px solid;
+}
+
+#leadership img {
+  border: 2px solid rgb(var(--grey-green));
+}
+
+.leadership-name {
+  font-size: 32px;
+}
+
+.leadership-title {
+  font-size: 24px;
+  padding: 0.4em 0;
+}
+
+#leader-info p {
+  font-size: 22px;
+}
+
+.howitworks-intro h3 {
+  font-size: 32px;
+  color: rgb(var(--light-green));
+}
+
+.howitworks-intro p {
+  font-size: 24px;
+}
+
+#solutions {
+  position: relative;
+}
+
+#solutions::before {
+  content: "";
+  background-color: rgb(var(--dark-gray));
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+#solutions::after {
+  content: "";
+  background-image: url(../img/honeycomb_pattern.svg);
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#solutions .sub-heading p {
+  font-size: 25px;
+  color: #fff;
+}
+
+.solution-category {
+  transition: 0.2s;
+}
+
+#solution-category-container a:hover {
+  text-decoration: none;
+}
+
+.solution-category:hover {
+  background: rgba(29, 37, 44, 0.7);
+}
+
+#product-link {
+  position: relative;
+}
+
+#product-link h5,
+#service-link h5 {
+  background: rgb(var(--fire-orange));
+  padding: 10px 20px;
+}
+
+footer {
+  background: rgb(var(--dark-green));
+  position: relative;
+}
+
+footer::after {
+  content: "";
+  width: 54em;
+  max-width: 60%;
+  height: 3em;
+  transform: skew(-57deg, 0);
+  background: rgb(var(--bg-color));
+  position: absolute;
+  top: -1px;
+  left: -2.9em;
+}
+
+.footer-heading h5 {
+  font-size: 1.38rem;
+  font-family: lemonde-courrier, serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.footer-contact {
+  font-size: 1rem;
+}
+
+.footer-contact div {
+  color: rgb(var(--light-green));
+  padding-right: 1.5em;
+}
+
+.footer-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  text-align: center;
+}
+
+.footer-nav li a {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+footer .footer-social {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+footer .footer-social li {
+  display: inline-block;
+}
+
+footer .footer-social a {
+  background: rgb(var(--light-green));
+  border-radius: 50%;
+  width: 1.5em;
+  color: white;
+  height: 1.5em;
+  display: inline-block;
+  text-align: center;
+}
+
+footer .legal,
+footer .legal a {
+  font-size: 0.6rem;
+  color: #e4e4e4;
+  text-align: center;
+}
+
+footer .legal p {
+  line-height: 0.5em;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Small or default devices */
+@media (min-width: 576px) {
+  #banner-upper {
+    text-align: right;
+  }
+  .footer-heading {
+    position: relative;
+  }
+
+  .footer-heading::before {
+    content: "";
+    background: url(../img/footer-logo.png) no-repeat;
+    background-size: contain;
+    width: 66px;
+    height: 54px;
+    position: absolute;
+    left: -4em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  #banner-upper .main-heading {
+    font-size: 2.5rem;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+      1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  #banner-upper .main-heading span {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    display: block;
+  }
+
+  .nav-link {
+    margin: 0 1.5rem;
+  }
+
+  .nav-item .last {
+    margin: 0 0 0 1.5rem;
+  }
+
+  .dropdown-menu {
+    margin-top: 9px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  #banner-lower .sub-heading,
+  #banner-lower .sub-heading p {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  #home .banner-main {
+    background-position: 20% 60%;
+    left: 0;
+  }
+
+  #banner-upper {
+    text-align: left;
+    padding-right: 0 rem;
+  }
+
+  #banner-lower .main-heading {
+    font-size: 1.8rem;
+  }
+
+  #banner-lower .sub-heading,
+  #banner-lower .sub-heading p {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  #home .banner-layer2 {
+    background: url(../img/bg-layer2.png);
+    background-repeat: no-repeat;
+    background-position: -521px -722px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  #home .banner-layer3 {
+    bottom: -20px;
+    left: 2%;
+    transform: scale(1);
+  }
+
+  #about .banner-layer3 {
+    background-position: 15% 20%;
+  }
+
+  #products .banner-layer3 {
+    background-size: cover;
+    background-position: 32% 14%;
+  }
+
+  #services .banner-main {
+    background-position: 0% 35%;
+  }
+
+  #services .banner-layer3 {
+    background-position: 15% 0%;
+  }
+
+  #product-link h5,
+  #service-link h5 {
+    background: none;
+    padding: 0px;
+  }
+
+  #product-link:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    top: 15%;
+    width: 2px;
+    height: 60%;
+    /* or 100px */
+    background: #ccc;
+  }
+
+  .footer-nav {
+    padding-left: 1em;
+  }
+
+  .footer-nav li {
+    text-align: right;
+  }
+
+  footer .footer-social {
+    text-align: right;
+  }
+
+  footer .legal {
+    text-align: right;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .footer-contact div {
+    display: inline;
+  }
+
+  .banner-main {
+    background-size: 100%;
+  }
+
+  #home .banner-layer2 {
+    background-repeat: no-repeat;
+    background-position: -421px -722px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  #home .banner-layer3 {
+    position: absolute;
+    bottom: -20px;
+    left: 1%;
+    transform: scale(1);
+  }
+  #about .banner-layer3 {
+    background-position: 70% 20%;
+  }
+  #services .banner-layer3 {
+    background-position: 100% 13%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #home .banner-layer3 {
+    left: 3%;
+  }
+}
